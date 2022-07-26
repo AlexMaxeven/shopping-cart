@@ -1,0 +1,261 @@
+// reset -
+@import 'reset';
+// global -
+@import 'global';
+// fonts - 
+// @import 'fonts';
+// // vars - 
+// @import 'vars';
+.main{
+    background-color: rgba(0, 0, 0, 0.02);
+}
+.food {
+    &__container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom:20px;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 24px;
+        margin-bottom:50px;
+        text-align: center;
+    }
+
+    &__inner {
+        display: grid;
+        max-width: 650px;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.food-box {
+    box-shadow: 1px 1px 5px 1px #000;
+    border-radius: 10px;
+    background-color: lightblue;
+    max-width: 320px;
+    &__img {
+        padding: 15px;
+        margin-bottom: 20px;
+        display: block;
+        margin: 0 auto;
+        max-width: 150px;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            max-width: 170px;
+            margin-top: -20px;
+        }
+    }
+
+    &__name {
+        font-size: 20px;
+        font-weight: 500;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        text-align: center;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &__text {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__amount {
+        // border-bottom: 1px solid #000;
+        margin-right: 5px;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    &__amount-btn {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        box-shadow: 1px 1px 5px 1px #000;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+
+    &__amount-text {
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 30px;
+        height: 50px;
+        align-items: center;
+        // background-color: #000;
+    }
+
+    &__price {
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__price-weight {
+        opacity: 0.8;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    &__price-money {
+        font-size: 18px;
+
+    }
+
+    &__btn {
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        margin: 0px auto 20px;
+        box-shadow: 1px 1px 5px 1px #000;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            width: 90%;
+            background-color: yellow;
+        }
+    }
+}
+.food-maincard__text.none{
+    display: none;
+}
+.food-maincard{
+    width: 325px;
+    box-shadow: 1px 1px 5px 1px #000;
+    border-radius: 10px;
+    background-color: lightblue;
+    display: flex;
+    padding: 0px 10px;
+    flex-direction: column;
+    border: 1px solid #000;
+    &__title{
+        padding: 15px 5px 5px 5px;
+        text-align: left;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    &__text{
+        border-radius: 5px;
+        width: 100%;
+        display: block;
+        margin: 10px 5px 25px 5px;
+        padding: 15px;
+        background-color: #fff;
+    }
+}
+// card - корзина
+.food-card {
+    &__box {
+        background-color: #fff;
+        box-shadow: 1px 1px 5px 1px #000;
+        align-items: center;
+        display: flex;
+        border-bottom: 1px solid #000;
+        padding: 10px;
+    }
+
+    &__box-img {
+        display: block;
+        max-width: 100px;
+        max-height: 100px;
+        &:hover{
+            max-width: 105px;
+            max-height: 105px;
+            margin-right: -5px;
+            // margin-left: -5px;
+        }
+    }
+
+    &__info {
+        margin-left: 25px;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        font-size: 18px;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &__name-inner {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #000;
+    }
+
+    &__price-weight {}
+
+    &__inner {
+        align-items: center;
+        display: flex;
+    }
+
+    &__amount {
+        display: flex;
+        margin: 0px 20px 0 0;
+    }
+
+    &__amount-btn {
+        width: 20px;
+    }
+
+    &__amount-text {
+        padding: 0px 5px;
+    }
+
+    &__price-money {
+        margin-bottom: 7px;
+        margin-right: 5px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+.food-card__box .food-box__amount{
+    margin-left: -24px;
+}
+
+// - slick scss
+// @import "./libs/slick.scss";

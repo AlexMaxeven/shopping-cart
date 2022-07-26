@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-P</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            
+        </header>
+        <main class="main">
+            <div class="food">
+                <div class="container">
+                    <img src="img/food-img-1.png" alt="" class="food__img">
+                    <h1 class="food__title">Food Delivery</h1>
+                    <p class="food__text">Efficient and delicious</p>
+                </div>
+                <div class="food__container">
+                    <div class="food__inner">
+                        <div class="food-box" data-id="01">
+                            <img src="img/food-img-2.png" alt="" class="food-box__img">
+                            <h4 class="food-box__name">Roll</h4>
+                            <p data-item-in-box class="food-box__text">6 it</p>
+                            <div class="food-box__inner">
+                                <div class="food-box__amount">
+                                    <button class="food-box__amount-btn" data-action="minus">-</button>
+                                    <p class="food-box__amount-text" data-counter>1</p>
+                                    <button class="food-box__amount-btn" data-action="plus">+</button>
+                                </div>
+                                <div class="food-box__price">
+                                    <p class="food-box__price-weight">150 g</p>
+                                    <p class="food-box__price-money">100 $</p>
+                                </div>
+                            </div>
+                            <button data-cart type="button" class="food-box__btn">Add to cart</button>
+                        </div>
+                        <div class="food-box" data-id="02">
+                            <img src="img/food-img-3.png" alt="" class="food-box__img">
+                            <h4 class="food-box__name">Chicken</h4>
+                            <p data-item-in-box class="food-box__text">1 it</p>
+                            <div class="food-box__inner">
+                                <div class="food-box__amount">
+                                    <button class="food-box__amount-btn" data-action="minus">-</button>
+                                    <p class="food-box__amount-text" data-counter>1</p>
+                                    <button class="food-box__amount-btn" data-action="plus">+</button>
+                                </div>
+                                <div class="food-box__price">
+                                    <p class="food-box__price-weight">250 g</p>
+                                    <p class="food-box__price-money">200 $</p>
+                                </div>
+                            </div>
+                            <button data-cart type="button" class="food-box__btn">Add to cart</button>
+                        </div>
+                        <div class="food-box" data-id="03">
+                            <img src="img/food-img-4.png" alt="" class="food-box__img">
+                            <h4 class="food-box__name">Noodles</h4>
+                            <p data-item-in-box class="food-box__text">2 it</p>
+                            <div class="food-box__inner">
+                                <div class="food-box__amount">
+                                    <button class="food-box__amount-btn" data-action="minus">-</button>
+                                    <p class="food-box__amount-text" data-counter>1</p>
+                                    <button class="food-box__amount-btn" data-action="plus">+</button>
+                                </div>
+                                <div class="food-box__price">
+                                    <p class="food-box__price-weight">350 g</p>
+                                    <p class="food-box__price-money">300 $</p>
+                                </div>
+                            </div>
+                            <button data-cart type="button" class="food-box__btn">Add to cart</button>
+                        </div>
+                        <div class="food-box" data-id="04">
+                            <img src="img/food-img-5.png" alt="" class="food-box__img">
+                            <h4 class="food-box__name">Burrito</h4>
+                            <p data-item-in-box class="food-box__text">1 it</p>
+                            <div class="food-box__inner">
+                                <!-- счетчик -->
+                                <div class="food-box__amount">
+                                    <button class="food-box__amount-btn" data-action="minus">-</button>
+                                    <p class="food-box__amount-text" data-counter>1</p>
+                                    <button class="food-box__amount-btn" data-action="plus">+</button>
+                                </div>
+    
+                                <div class="food-box__price">
+                                    <p class="food-box__price-weight">450 g</p>
+                                    <p class="food-box__price-money">400 $</p>
+                                </div>
+                            </div>
+                            <button data-cart type="button" class="food-box__btn">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="food-maincard">
+                        <h3 class="food-maincard__title">Your order</h3>
+                        <p class="food-maincard__text" data-cart-empty >cart is empty</p>
+                        <!-- <div class="food-card">
+                            <div class="food-card__box" data-id="04">
+                                <img src="img/food-img-2.png" alt="" class="food-card__box-img">
+                                <div class="food-card__info">
+                                    <h4 class="food-card__name">Food-4</h4>
+                                    <div class="food-card__name-inner">
+                                        <p data-item-in-box class="food-card__text">6 it</p>
+                                        <p class="food-card__price-weight">450 g</p>
+                                    </div>
+                                    <div class="food-card__inner">
+                                        <div class="food-card__amount">
+                                            <button class="food-card__amount-btn" data-action="minus">-</button>
+                                            <p class="food-card__amount-text" data-counter>1</p>
+                                            <button class="food-card__amount-btn" data-action="plus">+</button>
+                                        </div>                                    
+                                        <p class="food-card__price-money">400 $</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            
+        </footer>
+    </div>
+    
+    
+    <script src="js/toggleCartStatus.js"></script>
+    <script src="js/counter_02.js"></script>
+    <script src="js/cart_02.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
