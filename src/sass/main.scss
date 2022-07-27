@@ -9,6 +9,9 @@
 .main{
     background-color: rgba(0, 0, 0, 0.02);
 }
+.card-body.none {
+    display: none;
+}
 .food {
     &__container{
         display: flex;

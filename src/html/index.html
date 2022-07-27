@@ -94,10 +94,8 @@
                         </div>
                     </div>
                     <div class="food-maincard">
-                        <h3 class="food-maincard__title">Your order</h3>
-                        <p class="food-maincard__text" data-cart-empty >cart is empty</p>
-                        <!-- <div class="food-card">
-                            <div class="food-card__box" data-id="04">
+                        <h3 class="food-maincard__title">Cart</h3>
+                            <!-- <div class="food-card__box" data-id="04">
                                 <img src="img/food-img-2.png" alt="" class="food-card__box-img">
                                 <div class="food-card__info">
                                     <h4 class="food-card__name">Food-4</h4>
@@ -114,8 +112,26 @@
                                         <p class="food-card__price-money">400 $</p>
                                     </div>
                                 </div>
+                            </div> -->
+                        <div class="food-maincard__text" data-cart-empty >Your order</p>                        
+                    </div>
+                    <div id="order-form" class="card-body">
+                        <h5 class="card-title">Checkout</h5>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Your mobile number">
+                                <button class="form-group__button">
+                                    Push
+                                </button>
                             </div>
-                        </div> -->
+                        </form>
+                    </div>
+                    <div class="cart-total">
+                        <p>
+                            <span >Price (all):</span>
+                            <span class="total-price">0</span>
+                            <span class="dolalr">$</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -126,10 +142,9 @@
     </div>
     
     
-    <script src="js/toggleCartStatus.js"></script>
-    <script src="js/counter_02.js"></script>
-    <script src="js/cart_02.js"></script>
+    
     <script src="js/main.js"></script>
+    
 </body>
 
 </html>
