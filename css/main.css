@@ -122,6 +122,10 @@ body {
   background: rgba(0, 0, 0, 0.02);
 }
 
+.card-body.none {
+  display: none;
+}
+
 .food__container {
   display: -webkit-box;
   display: -ms-flexbox;
